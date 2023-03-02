@@ -12,12 +12,7 @@ st.header(option)
 
 
 if option == "FANG":
-    symbols=['SPY', 'QQQ', 'DIA', 'IWM', 'VTI', 'VIXY', 'XLK','SMH', 'IGV', 'TAN', 'TLT', 'ARKK', 'FFTY', 'SQQQ', 'TQQQ', 'SSO', 'UPRO', 'QLD', 'SPXL', 'SOXL',
-             'TECL', 'TNA', 'UDOW', 'ERX', 'FAS', 'LABU', 'NUGT', 'JNUG', 'GUSH',
-             'XLK', 'XLY', 'XLP', 'XLRE', 'XLE', 'XLV', 'XLB', 'XLI', 'XLF', 'XLU', 'XLC', 'XHB', 'XSW', 'XSD', 'KRE', 'XME', 'XRT','XOP', 'GLD', 'KBE',
-             'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NFLX', 'NVDA', 'TSLA', 'ADBE', 'NOW', 'CRM', 'TEAM', 'ASML', 'LRCX', 'AMAT', 'AMD', 'TSM', 'MU',
-             'FTNT', 'TTD',  'COST', 'HD', 'INTU', 'ISRG', 'SNPS', 'ACN', 'ABNB','SNOW', 'DDOG', 'RBLX', 'MDB', 'CRWD', 'NET', 'APPS', 'SHOP', 'ETSY',
-             'OKTA', 'ZS', 'PANW', 'ANET', 'JNPR', 'TWLO', 'ROKU', 'U', 'DOCU', 'ZM', 'UBER']
+    symbols=['SPY', 'QQQ', 'IWM', 'DIA', 'VTI', 'IWO', 'MDY', 'RSP', 'SSO', 'QLD', 'SDS', 'QID', 'TQQQ', 'SQQQ', 'XLK', 'SMH', 'IGV', 'TAN', 'FFTY', 'CIBR', 'WCLD', 'XLF', 'XLE', 'XLP', 'XLV', 'XLI', 'XLK', 'XLU', 'XLY', 'XLB', 'XOP', 'XHB', 'XME', 'OIH', 'XLC', 'ITB', 'PAVE', 'JETS', 'XBI', 'ITB', 'ARKK', 'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NFLX', 'NVDA', 'TSLA', 'AMD', 'COST', 'ASML', 'LRCX', 'KLAC', 'ANET', 'PANW', 'AVGO', 'AMAT', 'CAT', 'DE', 'HD', 'CRM', 'WMT', 'FTNT', 'JPM', 'AXP', 'MA', 'V', 'CDNS', 'SNPS', 'BKNG', 'ORLY', 'ADI', 'WDAY', 'LIN', 'ADSK', 'ALGN', 'TTD', 'CRWD', 'FSLR']
 
     if timing == "Daily":
         for stock in symbols:
