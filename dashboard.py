@@ -189,7 +189,7 @@ if option == "INDEX":
             st.image(f"https://charts2-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=w&s=linear&ct=candle_stick&o[0][ot]=sma&o[0][op]=40&o[0][oc]=FF8F33C6&o[1][ot]=sma&o[1][op]=30&o[1][oc]=DCB3326D&o[2][ot]=sma&o[2][op]=10&o[2][oc]=DC32B363&o[3][ot]=patterns&o[3][op]=&o[3][oc]=000")
 
 
-if option == "IBD":
+if option == "Daily":
     with open('daily') as f:
         symbols=[i.strip() for i in f.readlines()]
 
