@@ -4,15 +4,15 @@ import pandas as pd
 
 st.title("Stock Tracking Dashboard")
 
-option = st.sidebar.selectbox("Which Dashboard?", ('FANG', 'INDEX', 'Daily'))
+option = st.sidebar.selectbox("Which Dashboard?", ('Daily_review', 'INDEX', 'NEW'))
 
 timing = st.sidebar.selectbox("What Timeframe?", ('Daily', 'Weekly', 'Both'))
 
 st.header(option)
 
 
-if option == "FANG":
-    symbols=['SPY', 'QQQ', 'IWM', 'DIA', 'VTI', 'IWO', 'MDY', 'RSP', 'XLK', 'SMH', 'IGV', 'TAN', 'FFTY', 'CIBR', 'WCLD', 'XLF', 'XLE', 'XLP', 'XLV', 'XLI', 'XLK', 'XLU', 'XLY', 'XLB', 'XOP', 'XHB', 'XME', 'OIH', 'XLC', 'ITB', 'PAVE', 'JETS', 'XBI', 'ARKK', 'ARKW', 'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NFLX', 'NVDA', 'TSLA', 'AMD', 'COST', 'ASML', 'LRCX', 'KLAC', 'ANET', 'PANW', 'AVGO', 'AMAT', 'CAT', 'DE', 'HD', 'CRM', 'WMT', 'FTNT', 'JPM', 'AXP', 'MA', 'V', 'CDNS', 'SNPS', 'BKNG', 'ORLY', 'ADI', 'WDAY', 'LIN', 'ADSK', 'ALGN', 'TTD', 'CRWD', 'FSLR']
+if option == "Daily_review":
+    symbols=['SPY', 'QQQ', 'IWM', 'DIA', 'VTI', 'IWO', 'MDY', 'RSP', 'XLK', 'SMH', 'IGV', 'TAN', 'FFTY', 'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NFLX', 'NVDA', 'TSLA', 'AMD', 'COST', 'ASML', 'LRCX', 'KLAC', 'FTNT', 'PANW', 'AVGO', 'AMAT', 'CIBR', 'WCLD', 'XLF', 'XLE', 'XLP', 'XLV', 'XLI', 'XLK', 'XLU', 'XLY', 'XLB', 'XOP', 'XHB', 'XME', 'OIH', 'XLC', 'ITB', 'PAVE', 'JETS', 'XBI', 'ARKK', 'ARKW']
 
     if timing == "Daily":
         for stock in symbols:
@@ -189,21 +189,21 @@ if option == "INDEX":
             st.image(f"https://charts2-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=w&s=linear&ct=candle_stick&o[0][ot]=sma&o[0][op]=40&o[0][oc]=FF8F33C6&o[1][ot]=sma&o[1][op]=30&o[1][oc]=DCB3326D&o[2][ot]=sma&o[2][op]=10&o[2][oc]=DC32B363&o[3][ot]=patterns&o[3][op]=&o[3][oc]=000")
 
 
-if option == "Daily":
+if option == "NEW":
     with open('daily') as f:
         symbols=[i.strip() for i in f.readlines()]
 
     if timing == "Daily":
         for stock in symbols:
-            st.image(f"https://finviz.com/chart.ashx?t={stock}")
+            st.image(f"https://charts2-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=d&s=linear&ct=candle_stick&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF8F33C6&o[1][ot]=sma&o[1][op]=10&o[1][oc]=DCB3326D&o[2][ot]=sma&o[2][op]=20&o[2][oc]=DC32B363&o[3][ot]=patterns&o[3][op]=&o[3][oc]=000")
+
 
     if timing == "Weekly":
         for stock in symbols:
-            st.image(f"https://finviz.com/chart.ashx?t={stock}&ta=0&ty=c&p=w&s=l", width=None)
-
+            st.image(f"https://charts2-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=w&s=linear&ct=candle_stick&o[0][ot]=sma&o[0][op]=40&o[0][oc]=FF8F33C6&o[1][ot]=sma&o[1][op]=30&o[1][oc]=DCB3326D&o[2][ot]=sma&o[2][op]=10&o[2][oc]=DC32B363&o[3][ot]=patterns&o[3][op]=&o[3][oc]=000")
     if timing == "Both":
         for stock in symbols:
-            st.image(f"https://finviz.com/chart.ashx?t={stock}")
-            st.image(f"https://finviz.com/chart.ashx?t={stock}&ta=0&ty=c&p=w&s=l", width=None)
+            st.image(f"https://charts2-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=d&s=linear&ct=candle_stick&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF8F33C6&o[1][ot]=sma&o[1][op]=10&o[1][oc]=DCB3326D&o[2][ot]=sma&o[2][op]=20&o[2][oc]=DC32B363&o[3][ot]=patterns&o[3][op]=&o[3][oc]=000")
+            st.image(f"https://charts2-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=w&s=linear&ct=candle_stick&o[0][ot]=sma&o[0][op]=40&o[0][oc]=FF8F33C6&o[1][ot]=sma&o[1][op]=30&o[1][oc]=DCB3326D&o[2][ot]=sma&o[2][op]=10&o[2][oc]=DC32B363&o[3][ot]=patterns&o[3][op]=&o[3][oc]=000")
 
 
