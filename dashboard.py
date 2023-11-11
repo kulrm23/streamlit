@@ -4,7 +4,7 @@ import pandas as pd
 
 st.title("Stock Tracking Dashboard")
 
-option = st.sidebar.selectbox("Which Dashboard?", ('Daily_review', 'INDEX', 'NEW'))
+option = st.sidebar.selectbox("Watchlist?", ('Daily_review', 'INDEX', 'CURRENT'))
 
 timing = st.sidebar.selectbox("What Timeframe?", ('Daily', 'Weekly', 'Both'))
 
@@ -12,7 +12,7 @@ st.header(option)
 
 
 if option == "Daily_review":
-    symbols=['SPY', 'QQQ', 'IWM', 'DIA', 'VTI', 'IWO', 'MDY', 'RSP', 'XLK', 'SMH', 'IGV', 'TAN', 'FFTY', 'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NFLX', 'NVDA', 'TSLA', 'AMD', 'COST', 'ASML', 'LRCX', 'KLAC', 'FTNT', 'PANW', 'AVGO', 'AMAT', 'CIBR', 'WCLD', 'XLF', 'XLE', 'XLP', 'XLV', 'XLI', 'XLK', 'XLU', 'XLY', 'XLB', 'XOP', 'XHB', 'XME', 'OIH', 'XLC', 'ITB', 'PAVE', 'JETS', 'XBI', 'ARKK', 'ARKW']
+    symbols=['SPY', 'QQQ', 'IWM', 'DIA', 'VTI', 'IWO', 'MDY', 'RSP', 'QQQE', 'SDS', 'XLK', 'SMH', 'IGV', 'TAN', 'IYW', 'QTEC', 'FFTY', 'VGT', 'CIBR', 'SKYY', 'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NFLX', 'NVDA', 'TSLA', 'AMD', 'COST', 'ADBE', 'AVGO', 'ASML', 'LRCX', 'KLAC', 'AMAT', 'PANW', 'CRWD', 'ZS', 'DDOG', 'XLF', 'XLE', 'XLP', 'XLV', 'XLI', 'XLK', 'XLU', 'XLY', 'XLB', 'XOP', 'XHB', 'XME', 'OIH', 'XLC', 'ITB', 'PAVE', 'JETS', 'XBI', 'ARKK', 'ARKW']
 
     if timing == "Daily":
         for stock in symbols:
@@ -202,7 +202,7 @@ if option == "INDEX":
                 st.image(f"https://charts2-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=d&s=linear&ct=candle_stick&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF8F33C6&o[1][ot]=sma&o[1][op]=10&o[1][oc]=DCB3326D&o[2][ot]=sma&o[2][op]=20&o[2][oc]=DC32B363&o[3][ot]=patterns&o[3][op]=&o[3][oc]=000")
 
 
-if option == "NEW":
+if option == "CURRENT":
     with open('daily') as f:
         symbols=[i.strip() for i in f.readlines()]
 
