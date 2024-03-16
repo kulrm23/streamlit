@@ -12,8 +12,8 @@ st.header(option)
 
 
 if option == "Daily_review":
-    symbols=['SPY', 'QQQ', 'DIA', 'VTI', 'IWO', 'RSP', 'QQQE', 'SDS', 'XLK', 'SMH', 'IGV', 'VGT', 'TAN', 'FFTY', 'CIBR', 'WCLD', 'AIQ', 'IBIT', 'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NFLX', 'NVDA', 'TSLA', 'AMD', 'COST', 'ADBE', 'NOW', 'AVGO', 'ASML', 'LRCX', 'KLAC', 'AMAT', 'TSM', 'PANW', 'CRWD', 'ZS', 'DDOG', 'SMCI', 'MDB', 
-             'XLF', 'XLE', 'XLP', 'XLV', 'XLI', 'XLK', 'XLU', 'XLY', 'XLB', 'XOP', 'XHB', 'XME', 'OIH', 'XLC', 'ITB', 'PAVE', 'JETS', 'XBI', 'ARKK', 'ARKW', 'ARKF']
+    symbols=['SPY', 'QQQ', 'DIA', 'VTI', 'IWO', 'RSP', 'QQQE', 'SDS', 'XLK', 'SMH', 'IGV', 'VGT', 'TAN', 'FFTY', 'CIBR', 'WCLD', 'AIQ', 'IBIT', 'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NFLX', 'NVDA', 'TSLA', 'AMD', 'COST', 'NOW', 'AVGO', 'ASML', 'LRCX', 'SMCI', 
+             'XLF', 'XLE', 'XLP', 'XLV', 'XLI', 'XLK', 'XLC', 'XLU', 'XLY', 'XLB', 'XOP', 'XHB', 'XME', 'OIH', 'ITB', 'PAVE', 'JETS', 'XBI', 'ARKK', 'ARKW', 'ARKF', 'SOXL', 'SSO', 'QLD', 'TQQQ', 'SQQQ', 'FNGU']
 
     if timing == "Daily":
         for stock in symbols:
