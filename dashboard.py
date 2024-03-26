@@ -13,8 +13,8 @@ st.header(option)
 
 if option == "Daily_review":
     symbols=['SPY', 'QQQ', 'DIA',  'IWO', 'VTI', 'RSP', 'QQQE', 'SDS', 'XLK', 'SMH', 'IGV', 'VGT', 'TAN', 'FFTY', 'CIBR', 'BLOK', 'AIQ', 'IBIT', 'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NFLX', 'NVDA', 'TSLA', 'AMD', 'COST', 'NOW', 'AVGO', 'ASML', 'LRCX', 'AMAT', 'QCOM',
-             'TSM', 'ARM' 'SMCI', 'ANET', 'PANW', 'CRWD', 'UBER', 'COIN', 'DKNG', 
-             'XLF', 'XLE', 'XLP', 'XLV', 'XLI', 'XLK', 'XLC', 'XLU', 'XLY', 'XLB', 'XOP', 'XHB', 'XME', 'OIH', 'ITB', 'PAVE', 'JETS', 'XBI', 'GDX', 'ARKK', 'ARKW', 'ARKF', 'SOXL', 'SSO', 'QLD', 'TQQQ', 'SQQQ', 'FNGU', 'XLG', 'IVV', 'IJH', 'IJR', 'IDEV', 'IEMG', 'AGG' ]
+             'TSM', 'ARM', 'SMCI', 'ANET', 'PANW', 'CRWD', 'UBER', 'COIN', 'DKNG', 
+             'XLF', 'XLE', 'XLP', 'XLV', 'XLI', 'XLK', 'XLC', 'XLU', 'XLY', 'XLB', 'XOP', 'XHB', 'XME', 'OIH', 'ITB', 'PAVE', 'JETS', 'XBI', 'GDX', 'ARKK', 'ARKW', 'ARKF', 'SOXL', 'SSO', 'QLD', 'TQQQ', 'SQQQ', 'FNGU', 'XLG', 'IVV', 'IJH', 'IJR', 'IDEV', 'IEMG', 'AGG', 'VCE' ]
 
     if timing == "Daily":
         for stock in symbols:
