@@ -4,7 +4,7 @@ import pandas as pd
 
 st.title("Stock Tracking Dashboard")
 
-option = st.sidebar.selectbox("Watchlist?", ('Daily_review', 'WEEKLY_WL', 'ETF', 'SPQQQ100', 'DWM'))
+option = st.sidebar.selectbox("Watchlist?", ('Daily_review', 'WEEKLY_WL', 'ETF', 'SPQQ100', 'DWM'))
 
 timing = st.sidebar.selectbox("What Timeframe?", ('Daily', 'Weekly', 'Multi'))
 
