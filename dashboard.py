@@ -12,9 +12,12 @@ st.header(option)
 
 
 if option == "Daily_review":
-    symbols=['SPY', 'QQQ', 'DIA',  'IWO', 'VTI', 'RSP', 'QQQE', 'SDS', 'XLK', 'SMH', 'IGV', 'CIBR', 'VGT', 'TAN', 'FFTY', 'IBIT', 'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NFLX', 'NVDA', 'TSLA', 'AMD', 'COST', 'NOW', 'AVGO', 
+    symbols=['SPY', 'QQQ', 'DIA',  'IWO', 'VTI', 'RSP', 'QQQE', 'SDS', 'XLK', 'SMH', 'IGV', 'CIBR', 'VGT', 'TAN', 'FFTY', 'IBIT', 
+             'XLF', 'XLE', 'XLP', 'XLV', 'XLI', 'XLK', 'XLC', 'XLU', 'XLY', 'XLB', 'XOP', 'XHB', 'XME', 'OIH', 'ITB', 'PAVE', 'JETS', 'XBI', 'GDX', 'GDXJ',
+             'ARKK', 'BLOK', 'AIQ', 'WCLD', 'BOTZ', 'IPAY',  'SOXL', 'SSO', 'QLD', 'TQQQ', 'SQQQ', 'FNGU', 'XLG', 'IVV', 'IJH', 'IJR', 'IDEV', 'IEMG', 'AGG', 'TLT', 'FTEC', 'FDN',
+             'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NFLX', 'NVDA', 'TSLA', 'AMD', 'COST', 'NOW', 'AVGO', 
              'ASML', 'LRCX', 'AMAT', 'QCOM', 'TSM', 'ARM', 'SMCI', 'ANET', 'PANW', 'CRWD', 'UBER', 'COIN', 'ZS', 
-             'XLF', 'XLE', 'XLP', 'XLV', 'XLI', 'XLK', 'XLC', 'XLU', 'XLY', 'XLB', 'XOP', 'XHB', 'XME', 'OIH', 'ITB', 'PAVE', 'JETS', 'XBI', 'GDX', 'GDXJ', 'ARKK', 'ARKW', 'ARKF',  'BLOK', 'AIQ', 'WCLD', 'BOTZ', 'IPAY',  'SOXL', 'SSO', 'QLD', 'TQQQ', 'SQQQ', 'FNGU', 'BULZ', 'XLG', 'IVV', 'IJH', 'IJR', 'IDEV', 'IEMG', 'AGG', 'TLT', 'FTEC', 'FDN',  ]
+               ]
 
     if timing == "Daily":
         for stock in symbols:
