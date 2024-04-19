@@ -2,7 +2,14 @@ import streamlit as st
 from datetime import datetime, date, timedelta
 import pandas as pd
 
-st.title("Stock Tracking Dashboard")
+st.set_page_config(
+    page_title="Stock Tracking Dashboard",
+    page_icon="🧊",
+    layout="wide",
+    initial_sidebar_state="auto"
+)
+
+#st.title("Stock Tracking Dashboard")
 
 option = st.sidebar.selectbox("Watchlist?", ('Daily_review', 'WEEKLY_WL', 'ETF', 'SPQQ100', 'NEW_Daily_review'))
 
