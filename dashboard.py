@@ -135,7 +135,7 @@ if option == "Daily_review":
     
     SPDR = {
         'DAILY' : ['SPY', 'QQQ', 'DIA',  'IWO', 'VTI', 'RSP', 'QQQE', 'SDS', 'XLK', 'SMH', 'IGV', 'CIBR', 'VGT', 'TAN', 'FFTY', 'IBIT', 'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NVDA', 'TSLA', 'AMD', 'COST', 'AVGO', 'MU', 'TSM', 'ASML', 
-                   'XLC', 'XLY', 'XLP', 'XLF', 'XLV', 'XLI', 'XLE', 'XLB', 'XLU', 'XOP', 'XHB', 'XME', 'XBI', 'BLOK', 'PAVE', 'JETS' ],
+                   'XLC', 'XLY', 'XLP', 'XLF', 'XLV', 'XLI', 'XLE', 'XLB', 'XLU', 'XOP', 'XHB', 'XME', 'XBI', 'BLOK', 'PAVE', 'JETS', 'XLG', 'IVV', 'IJH', 'IJR', 'IDEV', 'IEMG', 'AGG', 'BND', 'TLT', 'GLD', 'SLV' ],
         'XLK': ['MSFT', 'AAPL', 'AVGO', 'NVDA', 'CRM', 'AMD', 'ADBE', 'ACN', 'ORCL', 'CSCO', 'QCOM', 'INTU', 'IBM', 'AMAT', 'INTC', 'NOW', 'TXN', 'MU', 'LRCX', 'ADI'],
         'XLC': ['META', 'GOOGL', 'GOOG', 'NFLX', 'VZ', 'T', 'TMUS', 'EA', 'DIS', 'CMCSA', 'CHTR', 'TTWO', 'WBD', 'OMC', 'LYV', 'IPG', 'NWSA', 'MTCH', 'FOXA', 'PARA'],
         'XLY': ['AMZN', 'TSLA', 'HD', 'MCD', 'LOW', 'BKNG', 'TJX', 'NKE', 'SBUX', 'CMG', 'ABNB', 'ORLY', 'MAR', 'AZO', 'HLT', 'F', 'GM', 'DHI', 'ROST', 'LULU'],
