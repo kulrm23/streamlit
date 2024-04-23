@@ -6,7 +6,7 @@ st.set_page_config(
     page_title="Stock Tracking Dashboard",
     page_icon="🧊",
     layout="wide",
-    initial_sidebar_state="auto"
+    initial_sidebar_state="collapsed"
 )
 
 #st.title("Stock Tracking Dashboard")
@@ -15,7 +15,7 @@ option = st.sidebar.selectbox("Watchlist?", ('Daily_review', 'Current_watchlist'
 
 timing = st.sidebar.selectbox("What Timeframe?", ('Daily', 'Weekly', 'Multi'))
 
-st.header(option)
+st.header("STOCK MARKET DASHBOARD")
 
 
 if option == "Old_Daily_review":
