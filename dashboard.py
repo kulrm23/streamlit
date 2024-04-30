@@ -165,7 +165,7 @@ if option == "Daily_review":
         #st.write(options)
         st.header(options)
     
-        for sector, stocks in SPDR.items():
+        for sector, symbols in SPDR.items():
             spdr_sector = sector
             if spdr_sector in options:
 
